@@ -10,18 +10,18 @@
 void rev_string(char *s)
 {
 	int length, h, half;
-	char tmpo;
+	char tmp;
 
 	for (length = 0; s[length] != '\0'; length++)
-	{
+		;
 		h = 0;
 		half = length / 2;
-	}
+
 	while (half--)
 	{
-		tmpo = s[length - h - 1];
+		tmp = s[length - h - 1];
 		s[length - h - 1] = s[h];
-		s[h] = tmpo;
+		s[h] = tmp;
 		h++;
 	}
 }
