@@ -1,15 +1,15 @@
 #include "main.h"
 
 /**
-  * _lenght - checks the length of a string
+  * _length - checks the length of a string
   * @s: is the string
-  * Return: return the lenght of the string
+  * Return: return the length of the string
 **/
-int _lenght(char *s)
+int _length(char *s)
 {
 	if (*s == '\0')
 		return (0);
-	return (1 + _lenght(s + 1));
+	return (1 + _length(s + 1));
 }
 
 /**
@@ -17,7 +17,7 @@ int _lenght(char *s)
  * @i: is the index
  * @lg: is the length of the string
  * @s: is the string
- * Return: 1 if is polindrome or 0 if not
+ * Return: 1 if is palindrome or 0 if not
 **/
 int checkp(int i, int lg, char *s)
 {
@@ -47,5 +47,5 @@ int checkp(int i, int lg, char *s)
 **/
 int is_palindrome(char *s)
 {
-	return (checkp(0, _lenght(s) - 1, s));
+	return (checkp(0, _length(s) - 1, s));
 }
