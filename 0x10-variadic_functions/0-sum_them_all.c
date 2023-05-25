@@ -4,14 +4,14 @@
 
 /**
  * sum_them_all - Entry point
- * Description - 'a function that prints the sum of all its params
+ * Description - 'a function that prints the sum of all its params'
  * @n: first argument
  * Return: sum of all parameters
  */
 
 int sum_them_all(const unsigned int n, ...)
 {
-	va_list arguments; /*storing the rest of arguments*/
+	va_list arguments;
 	int sum = 0;
 	unsigned int h;
 
@@ -20,7 +20,7 @@ int sum_them_all(const unsigned int n, ...)
 		return (0);
 	}
 
-	va_start(arguments, n); /* pointing where counting of arguments begin*/
+	va_start(arguments, n);
 
 	for (h = 0; h < n; h++)
 	{
