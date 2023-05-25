@@ -11,10 +11,9 @@
 
 int sum_them_all(const unsigned int n, ...)
 {
+	va_list arguments; /*storing the rest of arguments*/
 	int sum = 0;
 	unsigned int h;
-
-	va_list arguments; /*storing the rest of arguments*/
 
 	if (n == 0)
 	{
