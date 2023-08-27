@@ -10,31 +10,8 @@ Explore the different project directories to delve into various aspects of the C
 
 
 
-<b>Directory</b>                                       |     <b>Brief Summary</b>
------------------------------------------------------  | ------------------------------------------------------
-- [CHelloWorld](https://                               |  The classic "Hello, World!" program in the C language.
-		github.com/habibaadam/                 |  This simple program serves as an introductory example, demonstrating how
-		alx-low_level_programming/tree         | to print text to the console.
-		/master/0x00-hello_world)              |
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
+<b>Directory</b>                 |     <b>Brief Summary</b>
+-------------------------------- | ------------------------------------------------------
+C Hello World                    |   The classic "Hello, World!" program in the C language. This simple program serves as an introductory example, demonstrating how to print text to the console.
+                                 |
+				 |
