@@ -14,4 +14,5 @@ Explore the different project directories to delve into various aspects of the C
 -------------------------------- | ------------------------------------------------------
 C Hello World                    |   The classic "Hello, World!" program in the C language. This simple program serves as an introductory example, demonstrating how to print text to the console.
 C If/Else/While                  |   If-else statements allow you to make decisions in your code based on conditions. While loops are used to repeatedly execute a block of code as long as a condition is true. This topic covers how to use if-else statements and while loops in C.
+C Nested Loops and Functions     | Nested loops are loops placed inside other loops, allowing for more complex iterations. This topic covers how to use nested loops to iterate over multi-dimensional arrays or perform repetitive operations. It also introduces the concept of functions, reusable blocks of code that perform specific tasks.
 
