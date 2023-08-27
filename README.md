@@ -52,3 +52,8 @@ The prototypes of all your functions and the prototype of the function _putchar 
 * Don’t forget to push your header file
 * All your header files should be include guarded
 *  Directories at the beginning did not use printf as it was not allowed.
+
+## Compilation For Most Projects
+```bash
+gcc Wall -Werror -Wextra -pedantic -std=gnu89
+```
