@@ -35,7 +35,7 @@ C Doubly Linked List               |     A doubly linked list is an extension of
 C Dynamic Libraries                | Dynamic libraries (shared libraries) are compiled code modules that can be loaded and linked with a program at run time. This topic covers creating and using dynamic libraries in C, promoting modularity and code reuse.
 
 
-##Basic Requirements For Most Project Directories
+## Basic Requirements For Most Project Directories
 
 * Allowed editors: vi, vim, emacs
 * All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
