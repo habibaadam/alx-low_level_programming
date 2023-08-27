@@ -8,3 +8,33 @@ This repository contains a collection of projects focused on low-level programmi
 Each project directory represents a specific topic and includes a set of related tasks and code examples. These tasks are designed to enhance yomy  understanding of low-level programming and sharpen my skills in writing efficient and optimized code.
 Explore the different project directories to delve into various aspects of the C language and low-level programming principles. Each directory is accompanied by a detailed README file, providing explanations, instructions, and code samples for the tasks within.
 
+
+
+<b>Directory</b>                       |     <b>Brief Summary</b>
+---------------------------------------|--------------------------------------------------------
+- [C Hello World](https://             |  The classic "Hello, World!" program in the C language.
+github.com/habibaadam/                 |  This simple program serves as an introductory example, demonstrating how 
+alx-low_level_programming/tree         | to print text to the console.
+/master/0x00-hello_world)              |
+				                       |
+				                       |
+				                       |
+				                       |
+				                       |
+				                       |
+				                       |
+				                       |
+				                       |
+				                       |
+				                       |
+				                       |
+				                       |
+				                       |
+				                       |
+				                       |
+				                       |
+				                       |
+				                       |
+				                       |
+				                       |
+				                       |
