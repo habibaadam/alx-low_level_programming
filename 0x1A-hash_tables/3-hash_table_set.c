@@ -33,12 +33,13 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		{
 			free(ht->array[h]->value);
 			ht->array[h]->value = val_copy;
-			return (h);
+			return (1);
 		}
 	}
 	new_hash = malloc(sizeof(hash_node_t));
 	if (new_hash == NULL)
 	{
+		free(val_copy);
 		return (0);
 	}
 	new_hash->key = strdup(key);
