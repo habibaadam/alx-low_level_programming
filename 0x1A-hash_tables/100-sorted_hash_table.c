@@ -1,5 +1,12 @@
 #include "hash_tables.h"
 
+shash_table_t *shash_table_create(unsigned long int size);
+int shash_table_set(shash_table_t *ht, const char *key, const char *value);
+char *shash_table_get(const shash_table_t *ht, const char *key);
+void shash_table_print(const shash_table_t *ht);
+void shash_table_print_rev(const shash_table_t *ht);
+void shash_table_delete(shash_table_t *ht);
+
 /**
  * shash_table_create - Creates a sorted hash table.
  * @size: The size of new sorted hash table.
@@ -21,10 +28,9 @@ shash_table_t *shash_table_create(unsigned long int size)
 	if (ht->array == NULL)
 		return (NULL);
 	for (h = 0; h < size; h++)
-		ht->array[h] = NULL;
+		ht->array[i] = NULL;
 	ht->shead = NULL;
 	ht->stail = NULL;
-
 	return (ht);
 }
 
@@ -41,7 +47,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 {
 	shash_node_t *new, *tmp;
 	char *value_copy;
-	unsigned long int idx;
+	unsigned long int index;
 
 	if (ht == NULL || key == NULL || *key == '\0' || value == NULL)
 		return (0);
@@ -50,7 +56,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 	if (value_copy == NULL)
 		return (0);
 
-	idx = key_index((const unsigned char *)key, ht->size);
+	index = key_index((const unsigned char *)key, ht->size);
 	tmp = ht->shead;
 	while (tmp)
 	{
@@ -77,8 +83,8 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 		return (0);
 	}
 	new->value = value_copy;
-	new->next = ht->array[idx];
-	ht->array[idx] = new;
+	new->next = ht->array[index];
+	ht->array[index] = new;
 
 	if (ht->shead == NULL)
 	{
@@ -123,13 +129,13 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 char *shash_table_get(const shash_table_t *ht, const char *key)
 {
 	shash_node_t *node;
-	unsigned long int idx;
+	unsigned long int index;
 
 	if (ht == NULL || key == NULL || *key == '\0')
 		return (NULL);
 
-	idx = key_index((const unsigned char *)key, ht->size);
-	if (idx >= ht->size)
+	index = key_index((const unsigned char *)key, ht->size);
+	if (index >= ht->size)
 		return (NULL);
 
 	node = ht->shead;
