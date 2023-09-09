@@ -1,1 +1,1 @@
-C - Hash Tables
+C - Hash Tables and Sorted Hash Table
